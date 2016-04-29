@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.cf { zoom: 1; } .cf::before, .cf::after { content: ""; display: table; } .cf::after { clear: both; }
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #A9E2F3;
+}
+#stage {
+    margin: 0;
+    width: 980px;
+}
+nav {
+    margin: 0;
+    background: #A4A4A4;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    
+}
+.nav_button {
+    float: left;
+    width: 16%;
+    height: 40px;
+    color: azure;
+    line-height: 40px;
+    text-align: center;
+    background-color: #610B38;
+}
+.nav_button:hover {
+    color: chartreuse;
+}
