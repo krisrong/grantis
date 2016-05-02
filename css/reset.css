@@ -86,3 +86,18 @@ hr {
 input, select {
  vertical-align:middle;
 }
+
+ol, ul {
+    list-style: none;
+}
+/* clearfix */
+.cf {
+	zoom: 1;
+}
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}

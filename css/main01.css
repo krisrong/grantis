@@ -3,33 +3,105 @@
 .cf { zoom: 1; } .cf::before, .cf::after { content: ""; display: table; } .cf::after { clear: both; }
 
 body {
-    width: 100%;
-    margin: 0;
+    margin: 0;  
     padding: 0;
-    background: #A9E2F3;
 }
 #stage {
-    margin: 0;
-    width: 980px;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+header h1 {
+    margin: 0 auto;
+    padding: 15px 5px 7px 5px;
+    width: 90%;
+}
+header h1 img {
+    width: 100%;
+    max-width: 150px;
+}
+header ul#head_nav {
+    margin-bottom: 15px;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+header ul#head_nav li {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+header ul#head_nav li a {
+    display: block;
+    font-size: 0.8em;
+    margin-right: 20px;
+    padding-left: 20px;
+    background: url(../images/icn_contact.jpg) no-repeat left center;
+}
+header p {
+    width: 100%;
+}
+header p img {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
 }
 nav {
-    margin: 0;
-    background: #A4A4A4;
+    width: 100%;
+    margin: 0 auto;
 }
 nav ul {
-    margin: 0;
     padding: 0;
-    
+    text-align: center;
+    border-bottom: 3px double #000;
 }
 .nav_button {
     float: left;
-    width: 16%;
+    width: 50%;
     height: 40px;
     color: azure;
     line-height: 40px;
     text-align: center;
-    background-color: #610B38;
+    background-color: #0ca5b0;
 }
 .nav_button:hover {
     color: chartreuse;
+}
+
+@media only screen and (min-width: 961px) {
+    header h1 {
+        text-align: left;
+        padding: 15px 5px 7px 5px;
+        width: 280px;
+        float: left;
+    }
+    header ul#head_nav {
+        margin-top: 130px;
+        position: static;
+        float: right;
+    }
+    header ul#head_nav li {
+        position: static;
+        float: left;
+    }
+    header {
+        width: 960px;                   /*slide max-width*/
+        margin: 0 auto;                 /*slide center*/
+    }
+    nav {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .nav_button {
+        float: left;
+        width: 155px;
+        margin: 0px;
+        margin-right: 5px;
+    }
 }
